@@ -1270,3 +1270,27 @@ footer p { margin: 0; color: var(--text-secondary); font-size: var(--text-sm); }
   .project-header { flex-direction: column; align-items: flex-start; }
   .contact-item { flex-direction: column; }
 }
+
+@media (max-width: 768px) {
+  .section-hero { padding: var(--space-3xl) var(--space-md); }
+  .hero-content { padding: var(--space-3xl) var(--space-md); }
+  .timeline::before { left: 20px; }
+  .timeline-item::before { left: 20px; }
+  .timeline-item:nth-child(odd)  .timeline-card,
+  .timeline-item:nth-child(even) .timeline-card {
+    margin-left: 48px;
+    margin-right: 0;
+  }
+  .nav-links { position: static; transform: none; opacity: 1; pointer-events: auto; }
+  .nav-toggle { display: none; }
+}
+
+@media (max-width: 1024px) {
+  .section-hero { padding: var(--space-3xl) var(--space-md); }
+  .hero-content { padding: var(--space-3xl) var(--space-md); }
+}
+
+@media (max-width: 1280px) {
+  .section-hero { padding: var(--space-3xl) var(--space-lg); }
+  .hero-content { padding: var(--space-3xl) var(--space-lg); }
+}
